@@ -1,0 +1,12 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    
+    &__title {
+        font-weight: 400;
+        font-size: 32px;
+        color: var(--dark-blue);
+    }
+}
