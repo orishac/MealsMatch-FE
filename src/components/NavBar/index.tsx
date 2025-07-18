@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import SearchBar from "../SearchBar";
-import Profile from '../../assets/profile.svg?react';
-import Heart from '../../assets/heart.svg?react';
+import Profile from '../../assets/profile-2.svg?react';
+import Heart from '../../assets/heart-2.svg?react';
 import Logo from "../Logo";
 
 import "./styles.scss";
