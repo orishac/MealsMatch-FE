@@ -1,0 +1,44 @@
+@use '../../styles/settings';
+
+.searchbar {
+    &__container {
+        background-color: var(--medium-blue);
+        height: 40px;
+        width: 450px;
+        border-radius: 20px;
+
+        .MuiFilledInput-root {
+            background-color: transparent;
+            border: none ;
+            border-radius: 20px ;
+            
+            &::before,
+            &::after {
+                display: none;
+            }
+
+            &:hover::before {
+                display: none;
+            }
+        }
+
+        .MuiInputLabel-root {
+            color: var(--dark-blue);
+            transform: translate(330px, 12px) scale(1);
+            direction: rtl ;
+            cursor: text;
+            pointer-events: none;
+            
+            &.MuiInputLabel-shrink {
+                opacity: 0;
+            }
+        }
+
+        .MuiFilledInput-input {
+            padding: 8px 20px;
+            color: var(--dark-blue);
+            text-align: right;
+            direction: rtl;
+        }
+    }
+}

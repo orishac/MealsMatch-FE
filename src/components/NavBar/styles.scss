@@ -1,0 +1,27 @@
+@import '../../styles/settings';
+
+.navbar {
+    &__container {
+        background-color: var(--light-blue);
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: solid 1px var(--dark-blue);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+        padding: 0 0 0 150px;
+    }
+    
+    &__center {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__right_side {
+        svg {
+            width: 200px;
+            height: 50px;
+        }
+    }
+}
