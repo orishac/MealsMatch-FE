@@ -1,4 +1,5 @@
 
+import Card from '../../components/Card';
 import CategoriesCarousel from '../../components/CategoriesCarousel';
 import './styles.scss'
 
@@ -14,10 +15,15 @@ const HomePage = () => {
         </div>
       </div>
       <div className="home-page__reccomendations">
-        <div className="home-page__title">
+        <div className="home-page__reccomendations-title">
           מסעדות מומלצות
         </div>
-        <div className="home-page__reccomendations-content"></div>
+        <div className="home-page__reccomendations-content">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
     </div>
   );
