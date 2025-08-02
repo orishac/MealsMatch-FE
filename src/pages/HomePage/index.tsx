@@ -1,3 +1,5 @@
+
+import CategoriesCarousel from '../../components/CategoriesCarousel';
 import './styles.scss'
 
 const HomePage = () => {
@@ -7,7 +9,8 @@ const HomePage = () => {
         <div className="home-page__title">
           בחר קטגוריה
         </div>
-        <div className="home-page__categories-content">
+        <div className="home-page__categories">
+          <CategoriesCarousel />
         </div>
       </div>
       <div className="home-page__reccomendations">
