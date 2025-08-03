@@ -19,10 +19,9 @@ const HomePage = () => {
           מסעדות מומלצות
         </div>
         <div className="home-page__reccomendations-content">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {Array.from({ length: 8 }, (_, index) => (
+            <Card key={index} />
+          ))}
         </div>
       </div>
     </div>
