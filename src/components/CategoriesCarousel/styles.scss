@@ -1,61 +1,70 @@
-@use '../../styles/settings';
-
 .carouselWrapper {
   width: 100%;
-  overflow: hidden;
   margin-top: 30px;
+  position: relative; 
 }
 
 .categoriesCarousel {
-    .swiper-wrapper {
-        display: flex;
+  position: relative;
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: var(--dark-blue);
+    z-index: 20;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 15px;
+    z-index: 10;
+  }
+
+  .categorySlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid var(--dark-blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background-color: var(--light-blue);
+
+      img {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
+      }
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        color: #000; /* or any visible color */
-        z-index: 20;
+    .categoryName {
+      margin-top: 10px;
+      font-size: 24px;
+      color: #333;
     }
-
-    .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-    }
-
-    
-    .swiper-pagination {
-        position: absolute;
-        bottom: 15px;
-        z-index: 10;
-    }
-
-
-    .categorySlide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 300px;        
-        height: 350px;      
-        overflow: hidden;    
-        padding: 10px;
-        box-sizing: border-box;
-
-        img {
-            height: 150px;
-            object-fit: contain;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        &:hover img {
-            transform: scale(1.1);   
-        }
-
-        p {
-            font-size: 32px;
-            margin-top: 10px;
-        }
-    }
+  }
 }

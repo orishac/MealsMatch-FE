@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       <div className="home-page__categories">
-        <div className="home-page__title">
+        <div className="home-page__carousel_title">
           בחר קטגוריה
         </div>
         <div className="home-page__categories">
