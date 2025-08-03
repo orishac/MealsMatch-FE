@@ -26,4 +26,15 @@
             gap: 24px;
         }
     }
+    &__reccomendations {
+        &-title {
+            font-weight: 400;
+            font-size: 32px;
+            color: var(--dark-blue);
+        }
+        &-content {
+            display: flex;
+            gap: 24px;
+        }
+    }
 }
