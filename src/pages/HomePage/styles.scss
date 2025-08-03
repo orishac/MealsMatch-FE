@@ -2,17 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 50px 0px 50px 0px;
     
-    &__title {
+    &__carousel_title {
         font-weight: 400;
-        font-size: 32px;
+        font-size: 40px;
         color: var(--dark-blue);
     }
 
     &__categories {
         width: 100%;
         height: 100%;
+        padding: 30px 0px 30px 0px;
     }
     &__reccomendations {
         &-title {

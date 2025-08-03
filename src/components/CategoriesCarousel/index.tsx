@@ -46,25 +46,26 @@ const CategoriesCarousel = () => {
 
   return (
     <div className="carouselWrapper">
-        <Swiper
-            modules={[Navigation, Pagination]}
-            slidesPerView={6}
-            spaceBetween={15}
-            pagination={true}
-            navigation={true}
-            className="categoriesCarousel"
-        >
+      <Swiper
+        modules={[Navigation, Pagination]}
+        slidesPerView={8}
+        spaceBetween={0}
+        pagination={{ clickable: true }}
+        navigation
+        className="categoriesCarousel"
+      >
         {categories.map((category, index) => (
-            <SwiperSlide key={index}>
+          <SwiperSlide key={index}>
             <div className="categorySlide">
+              <div className="circle">
                 <img src={category.icon} alt={category.name} />
-                <p>{category.name}</p>
+              </div>
+              <p className="categoryName">{category.name}</p>
             </div>
-            </SwiperSlide>
+          </SwiperSlide>
         ))}
-        </Swiper>
+      </Swiper>
     </div>
-    
   );
 };
 
