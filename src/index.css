@@ -3,6 +3,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #eef1f7;
+  overflow: hidden;
 }
 
 .container {

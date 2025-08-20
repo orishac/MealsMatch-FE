@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage';
 import RestaurantPage from './pages/RestaurantPage';
 import './styles/settings.scss';
 import './App.css';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
             <div className="container">
             <Routes>
               <Route path="/" element={<HomePage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage/>}/>
               <Route path="/restaurant/:id" element={<RestaurantPage />} />
             </Routes>
             </div>
