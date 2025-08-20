@@ -22,4 +22,12 @@ describe('Card', () => {
     render(<Card />);
     expect(screen.getByTestId('heart-icon')).toBeInTheDocument();
   });
+
+  it('renders all company logos', () => {
+    render(<Card />);
+    expect(screen.getByTestId('cibus-logo')).toBeInTheDocument();
+    expect(screen.getByTestId('tabit-logo')).toBeInTheDocument();
+    expect(screen.getByTestId('tenbis-logo')).toBeInTheDocument();
+    expect(screen.getByTestId('wolt-logo')).toBeInTheDocument();
+  });
 });
