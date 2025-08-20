@@ -1,5 +1,6 @@
 
 import "./styles.scss";
+import { useNavigate } from 'react-router-dom';
 import Star from '../../assets/star.svg?react';
 import Heart from '../../assets/heart-2.svg?react';
 import Wolt from "../../assets/wolt.svg?react"
@@ -8,8 +9,14 @@ import Tenbis from "../../assets/tenbis.svg?react"
 import Tabit from "../../assets/tabit.svg?react"
 
 const Card = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate('/restaurant/1'); // You can make this dynamic based on restaurant ID
+  };
+
   return (
-    <div className="card">
+    <div className="card" onClick={handleCardClick} style={{ cursor: 'pointer' }}>
         <div className="card__image"></div>
         <div className="card__detailes">
             <h1>שם המסעדה</h1>
